@@ -1,0 +1,191 @@
+  /* Basic Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navbar Styles */
+nav{
+    display: inline;
+}
+.navbar1 {
+    overflow: hidden;
+    padding-left:10em;
+    padding-top:27px ;
+    height: 80px;
+}
+
+.navbar1 a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+}
+
+.navbar1 a:hover {
+    color: rgb(250, 231, 124);
+}
+
+/* Hamburger Menu Styles */
+.navbar1 .icon {
+    display: none;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+    float: right;
+    padding: 12px 16px;
+    border: 1px solid black;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .navbar1 a:not(.icon) {
+        display: none;
+    }
+
+    .navbar1 a.icon {
+        float: right;
+        display: block;
+        color: white;
+        border-color: #ffffff;
+    }
+
+    .navbar1.responsive {
+        position:relative;
+    }
+
+    .navbar1.responsive a.icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar1.responsive a {
+        float:right;
+        display: block;
+        text-align: left;
+    }
+}
+.navbar1 .brand-nm{
+   padding-right: 70px;
+   color: rgb(250, 231, 124);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: larger;
+}
+article{
+    background-image: url("image/home3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.intro{
+    height: 350px;
+    margin-bottom: 70px;
+}
+.intro h1{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 150px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.reco{
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 25%;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Gabarito', cursive;
+}
+.info{
+    background-color: #f9f9fb;
+    height: 500px;
+    margin-top: 50px;
+    padding-top: 130px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Gabarito', cursive;
+    
+}
+.hover:hover{
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.055);
+    transform: translate( 10px, -10px);;
+    transition: 1s;
+}
+#about{
+    background-color: #ffffff;
+    height: 500px;
+    text-align: center;
+}
+#about h1{
+    padding-top: 70px;
+}
+#about-img{
+    border-radius: 15px;
+}
+#contact{
+    background-color: #f9f9fb;
+    height: 110%;
+}
+#footer{
+    background-color: #333333;
+    height: 100%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+#btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#rent-btn{
+    display: inline-block;
+    background-color: #009cd9;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    margin-right: 40px;
+    margin-top: 40px;
+    height: 50px;
+    transition: 1s;
+    
+}
+@keyframes roll {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+#rent-btn:hover{
+    transform: translate( 20px);
+
+    color: white;
+    background-color: rgb(0, 255, 136);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 50px;
+}
