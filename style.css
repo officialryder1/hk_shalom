@@ -1,7 +1,11 @@
   /* Basic Styles */
-  body {
+  *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+  body {
+    min-height: 100vh;
     font-family: 'AR One Sans', sans-serif;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Comfortaa', cursive;
